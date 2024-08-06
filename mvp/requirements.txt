@@ -1,0 +1,11 @@
+fastapi
+sqlalchemy
+uvicorn
+psycopg2-binary
+python-multipart
+requests
+streamlit
+streamlit_option_menu
+transformers
+torch
+BeautifulSoup4

@@ -1,0 +1,20 @@
+{
+    "dataset_file": "./data/processed/dataset.jsonl",
+    "model_name": "medicalai/ClinicalBERT",
+    "batch_size": 8,
+    "epochs": 3,
+    "learning_rate": 2e-5,
+    "output_dir": "./models/clinicalbert_finetuned",
+    "evaluation": {
+        "batch_size": 8
+    },
+    "zero_shot_learning": {
+        "max_length": 512,
+        "padding": "max_length",
+        "truncation": true,
+        "return_tensors": "pt",
+        "num_labels": 2,
+        "temperature": 0.7,
+        "threshold": 0.5
+    }
+}
